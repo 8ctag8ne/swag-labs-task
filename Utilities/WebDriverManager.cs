@@ -1,11 +1,12 @@
 using OpenQA.Selenium;
+using OpenQA.Selenium.BiDi.Modules.BrowsingContext;
 
 
 namespace SwagLabsTask.Utilities
 {
     public sealed class WebDriverManager
     {
-        private static WebDriverManager instance = null;
+        private static WebDriverManager? instance = null;
         private static readonly object padlock = new object();
         private IWebDriver driver;
 
@@ -31,14 +32,21 @@ namespace SwagLabsTask.Utilities
             get { return driver; }
         }
 
-        public WebDriverManager Instance
+        public WebDriverManager? Instance
         {
             get { return instance; }
         }
 
-        public void Quit()
+        public static void ResetInstance()
         {
-            driver.Quit();
+            lock (padlock)
+            {
+                if (instance != null)
+                {
+                    instance.Driver.Quit();
+                    instance = null;
+                }
+            }
         }
     }
 }

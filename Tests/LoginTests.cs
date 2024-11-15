@@ -22,7 +22,7 @@ namespace SwagLabsTestTask
             SerilogLogger.Initialize();
             SerilogLogger.Separate();
             SerilogLogger.LogInfo("Starting test UC1:");
-            var loginPage = new LoginPage(Browser.CreateWebDriver(this.browser), TimeSpan.FromSeconds(5));
+            var loginPage = new LoginPage(browser, TimeSpan.FromSeconds(5));
             try
             {
                 loginPage.Open();
@@ -58,7 +58,7 @@ namespace SwagLabsTestTask
             SerilogLogger.Initialize();
             SerilogLogger.Separate();
             SerilogLogger.LogInfo("Starting test UC2:");
-            var loginPage = new LoginPage(Browser.CreateWebDriver(this.browser), TimeSpan.FromSeconds(5));
+            var loginPage = new LoginPage(browser, TimeSpan.FromSeconds(5));
             try
             {
                 loginPage.Open();
@@ -93,9 +93,8 @@ namespace SwagLabsTestTask
             SerilogLogger.Initialize();
             SerilogLogger.Separate();
             SerilogLogger.LogInfo("Starting test UC3:");
-            var driver = Browser.CreateWebDriver(this.browser);
-            var loginPage = new LoginPage(driver, TimeSpan.FromSeconds(5));
-            var inventoryPage = new InventoryPage(driver, TimeSpan.FromSeconds(5));
+            var loginPage = new LoginPage(browser, TimeSpan.FromSeconds(5));
+            var inventoryPage = new InventoryPage(browser, TimeSpan.FromSeconds(5));
             try
             {
                 loginPage.Open();
