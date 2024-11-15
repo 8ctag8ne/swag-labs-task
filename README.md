@@ -41,6 +41,7 @@ This task involves creating automated tests to verify the functionality of the l
 - **Browsers**:
   1. Firefox;
   2. Chrome.
+  3. Edge
 - **Locators**: XPath.
 - **Test Runner**: xUnit.
 - **Logging**: SeriLog (optional).
