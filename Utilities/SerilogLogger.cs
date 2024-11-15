@@ -32,7 +32,7 @@ namespace SwagLabsTask.Utilities
             Log.Warning(message);
         }
 
-        public static void LogError(string message, Exception ex = null)
+        public static void LogError(string message, Exception? ex = null)
         {
             if (ex != null)
             {

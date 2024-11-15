@@ -6,7 +6,7 @@ namespace SwagLabsTestTask
 {   
     public class LoginTests
     {
-        private string browser = "chrome"; //cuz it's the fastest on my computer
+        private string browser = "Chrome"; //cuz it's the fastest on my computer
         public LoginTests()
         {
             SerilogLogger.LogInfo($"{nameof(LoginTests)} class has been initialized.");
