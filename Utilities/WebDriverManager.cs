@@ -1,6 +1,4 @@
 using OpenQA.Selenium;
-using OpenQA.Selenium.BiDi.Modules.BrowsingContext;
-
 
 namespace SwagLabsTask.Utilities
 {
@@ -30,11 +28,6 @@ namespace SwagLabsTask.Utilities
         public IWebDriver Driver
         {
             get { return driver; }
-        }
-
-        public WebDriverManager? Instance
-        {
-            get { return instance; }
         }
 
         public static void ResetInstance()

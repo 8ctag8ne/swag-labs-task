@@ -98,3 +98,4 @@
 2024-11-15 20:18:53.720 +02:00 [INF] Login form submitted.
 2024-11-15 20:18:53.740 +02:00 [ERR] Epic sadface: Username is required
 2024-11-15 20:18:53.740 +02:00 [INF] Test UC1 with values , 101244 has passed.
+2024-11-15 20:54:40.304 +02:00 [INF] LoginTests class has been initialized.

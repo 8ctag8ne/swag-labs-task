@@ -12,11 +12,24 @@ namespace SwagLabsTask.Utilities
             switch (browser.ToLower())
             {
                 case "chrome":
-                    return new ChromeDriver();
+                {
+                    var options = new ChromeOptions();
+                    options.AddArgument("--start-maximized");
+                    options.AddArgument("--disable-extensions");
+                    return new ChromeDriver(options);
+                }
                 case "firefox":
-                    return new FirefoxDriver();
+                {
+                    var options = new FirefoxOptions();
+                    options.AddArgument("--start-maximized");
+                    return new FirefoxDriver(options);
+                }
                 case "edge":
-                    return new EdgeDriver();
+                {
+                    var options = new EdgeOptions();
+                    options.AddArgument("--start-maximized");
+                    return new EdgeDriver(options);
+                }
                 default:
                     throw new NotSupportedException($"Browser {browser} is not supported.");
             }
