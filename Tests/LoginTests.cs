@@ -38,7 +38,7 @@ namespace SwagLabsTestTask
             }
             catch (Exception ex)
             {
-                SerilogLogger.LogInfo(ex.Message);
+                SerilogLogger.LogError(ex.Message, ex);
                 throw;
             }
             finally
@@ -73,7 +73,7 @@ namespace SwagLabsTestTask
             }
             catch (Exception ex)
             {
-                SerilogLogger.LogInfo(ex.Message);
+                SerilogLogger.LogError(ex.Message, ex);
                 throw;
             }
             finally
@@ -109,7 +109,7 @@ namespace SwagLabsTestTask
             }
             catch (Exception ex)
             {
-                SerilogLogger.LogInfo(ex.Message);
+                SerilogLogger.LogError(ex.Message, ex);
                 throw;
             }
             finally

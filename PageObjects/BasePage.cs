@@ -30,7 +30,6 @@ namespace SwagLabsTask.PageObjects
 
         public void Close()
         {
-            driver.Quit();
             WebDriverManager.ResetInstance();
         }
     }
