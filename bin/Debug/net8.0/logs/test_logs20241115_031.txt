@@ -1,0 +1,33 @@
+2024-11-15 19:47:02.201 +02:00 [INF] ####################################################################################################
+2024-11-15 19:47:02.207 +02:00 [INF] Starting test UC1:
+2024-11-15 19:47:03.724 +02:00 [INF] Login page opened
+2024-11-15 19:47:03.824 +02:00 [INF] Filled username: Rudolf
+2024-11-15 19:47:03.897 +02:00 [INF] Filled password: Rittler
+2024-11-15 19:47:04.282 +02:00 [INF] Login form submitted.
+2024-11-15 19:47:04.308 +02:00 [ERR] Epic sadface: Username is required
+2024-11-15 19:47:04.319 +02:00 [INF] Test UC1 with values Rudolf, Rittler has passed.
+2024-11-15 19:47:04.464 +02:00 [INF] ####################################################################################################
+2024-11-15 19:47:04.469 +02:00 [INF] Starting test UC1:
+2024-11-15 19:47:06.500 +02:00 [INF] Login page opened
+2024-11-15 19:47:06.599 +02:00 [INF] Filled username: 0
+2024-11-15 19:47:06.663 +02:00 [INF] Filled password: 
+2024-11-15 19:47:06.779 +02:00 [INF] Login form submitted.
+2024-11-15 19:47:06.799 +02:00 [ERR] Epic sadface: Username is required
+2024-11-15 19:47:06.800 +02:00 [INF] Test UC1 with values 0,  has passed.
+2024-11-15 19:47:07.286 +02:00 [INF] ####################################################################################################
+2024-11-15 19:47:07.292 +02:00 [INF] Starting test UC1:
+2024-11-15 19:47:16.291 +02:00 [INF] Login page opened
+2024-11-15 19:47:16.335 +02:00 [INF] Filled username: 
+2024-11-15 19:47:16.369 +02:00 [INF] Filled password: 101244
+2024-11-15 19:47:16.675 +02:00 [INF] Login form submitted.
+2024-11-15 19:47:16.689 +02:00 [ERR] Epic sadface: Username is required
+2024-11-15 19:47:16.690 +02:00 [INF] Test UC1 with values , 101244 has passed.
+2024-11-15 19:47:17.487 +02:00 [INF] ####################################################################################################
+2024-11-15 19:47:17.492 +02:00 [INF] Starting test UC1:
+2024-11-15 19:47:19.285 +02:00 [INF] Login page opened
+2024-11-15 19:47:19.371 +02:00 [INF] Filled username: 
+2024-11-15 19:47:19.431 +02:00 [INF] Filled password: 
+2024-11-15 19:47:19.515 +02:00 [INF] Login form submitted.
+2024-11-15 19:47:19.536 +02:00 [ERR] Epic sadface: Username is required
+2024-11-15 19:47:19.536 +02:00 [INF] Test UC1 with values ,  has passed.
+2024-11-15 19:53:25.743 +02:00 [INF] LoginTests class has been initialized.

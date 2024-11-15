@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "SwagLabsTask/1.0.0": {
         "dependencies": {
+          "DotNetSeleniumExtras.PageObjects": "3.11.0",
           "Microsoft.Extensions.Logging.Abstractions": "9.0.0",
           "Microsoft.NET.Test.Sdk": "17.11.1",
           "Newtonsoft.Json": "13.0.1",
@@ -22,6 +23,17 @@
         },
         "runtime": {
           "SwagLabsTask.dll": {}
+        }
+      },
+      "DotNetSeleniumExtras.PageObjects/3.11.0": {
+        "dependencies": {
+          "Selenium.WebDriver": "4.26.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SeleniumExtras.PageObjects.dll": {
+            "assemblyVersion": "3.11.0.0",
+            "fileVersion": "3.11.0.0"
+          }
         }
       },
       "Microsoft.CodeCoverage/17.11.1": {
@@ -431,6 +443,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "DotNetSeleniumExtras.PageObjects/3.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DJCLQ3beq1fzqpeQ5jTZwDqmzbOD2Xxsb/jCyShYam88CNwGGn5aBBqu4LVSj0sy0Ai76OauQQncYlC48VvQUQ==",
+      "path": "dotnetseleniumextras.pageobjects/3.11.0",
+      "hashPath": "dotnetseleniumextras.pageobjects.3.11.0.nupkg.sha512"
     },
     "Microsoft.CodeCoverage/17.11.1": {
       "type": "package",

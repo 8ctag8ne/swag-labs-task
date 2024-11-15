@@ -1,0 +1,101 @@
+2024-11-15 19:53:25.768 +02:00 [INF] ####################################################################################################
+2024-11-15 19:53:25.773 +02:00 [INF] Starting test UC2:
+2024-11-15 19:53:27.582 +02:00 [INF] Login page opened
+2024-11-15 19:53:27.684 +02:00 [INF] Filled username: Man...
+2024-11-15 19:53:27.755 +02:00 [INF] Filled password: (Linux)
+2024-11-15 19:53:27.947 +02:00 [INF] Login form submitted.
+2024-11-15 19:53:27.968 +02:00 [ERR] Epic sadface: Password is required
+2024-11-15 19:53:27.978 +02:00 [INF] Test UC2 with values Man..., (Linux) has passed.
+2024-11-15 19:53:28.075 +02:00 [INF] ####################################################################################################
+2024-11-15 19:53:28.079 +02:00 [INF] Starting test UC2:
+2024-11-15 19:53:29.840 +02:00 [INF] Login page opened
+2024-11-15 19:53:29.952 +02:00 [INF] Filled username: drop table users;
+2024-11-15 19:53:30.013 +02:00 [INF] Filled password: )
+2024-11-15 19:53:30.094 +02:00 [INF] Login form submitted.
+2024-11-15 19:53:30.113 +02:00 [ERR] Epic sadface: Password is required
+2024-11-15 19:53:30.113 +02:00 [INF] Test UC2 with values drop table users;, ) has passed.
+2024-11-15 19:53:30.209 +02:00 [INF] ####################################################################################################
+2024-11-15 19:53:30.215 +02:00 [INF] Starting test UC2:
+2024-11-15 19:53:31.924 +02:00 [INF] Login page opened
+2024-11-15 19:53:32.012 +02:00 [INF] Filled username: 0
+2024-11-15 19:53:32.080 +02:00 [INF] Filled password:     
+2024-11-15 19:53:32.223 +02:00 [INF] Login form submitted.
+2024-11-15 19:53:32.242 +02:00 [ERR] Epic sadface: Password is required
+2024-11-15 19:53:32.242 +02:00 [INF] Test UC2 with values 0,      has passed.
+2024-11-15 19:53:32.379 +02:00 [INF] ####################################################################################################
+2024-11-15 19:53:32.387 +02:00 [INF] Starting test UC2:
+2024-11-15 19:53:34.130 +02:00 [INF] Login page opened
+2024-11-15 19:53:34.220 +02:00 [INF] Filled username:      
+2024-11-15 19:53:34.278 +02:00 [INF] Filled password: 
+2024-11-15 19:53:34.341 +02:00 [INF] Login form submitted.
+2024-11-15 19:53:34.361 +02:00 [ERR] Epic sadface: Password is required
+2024-11-15 19:53:34.361 +02:00 [INF] Test UC2 with values      ,  has passed.
+2024-11-15 19:53:34.474 +02:00 [INF] ####################################################################################################
+2024-11-15 19:53:34.478 +02:00 [INF] Starting test UC3:
+2024-11-15 19:53:36.201 +02:00 [INF] Login page opened
+2024-11-15 19:53:36.317 +02:00 [INF] Filled username: performance_glitch_user
+2024-11-15 19:53:36.386 +02:00 [INF] Filled password: secret_sauce
+2024-11-15 19:53:41.459 +02:00 [INF] Login form submitted.
+2024-11-15 19:53:41.469 +02:00 [INF] No errors
+2024-11-15 19:53:41.629 +02:00 [INF] Inventory page opened.
+2024-11-15 19:53:46.715 +02:00 [INF] Test UC3 with values performance_glitch_user, secret_sauce has passed.
+2024-11-15 19:53:46.820 +02:00 [INF] ####################################################################################################
+2024-11-15 19:53:46.824 +02:00 [INF] Starting test UC3:
+2024-11-15 19:53:48.557 +02:00 [INF] Login page opened
+2024-11-15 19:53:48.657 +02:00 [INF] Filled username: visual_user
+2024-11-15 19:53:48.730 +02:00 [INF] Filled password: secret_sauce
+2024-11-15 19:53:48.803 +02:00 [INF] Login form submitted.
+2024-11-15 19:53:48.812 +02:00 [INF] No errors
+2024-11-15 19:53:48.871 +02:00 [INF] Inventory page opened.
+2024-11-15 19:53:48.959 +02:00 [INF] Test UC3 with values visual_user, secret_sauce has passed.
+2024-11-15 19:53:49.070 +02:00 [INF] ####################################################################################################
+2024-11-15 19:53:49.075 +02:00 [INF] Starting test UC3:
+2024-11-15 19:53:50.836 +02:00 [INF] Login page opened
+2024-11-15 19:53:50.937 +02:00 [INF] Filled username: standard_user
+2024-11-15 19:53:51.010 +02:00 [INF] Filled password: secret_sauce
+2024-11-15 19:53:51.077 +02:00 [INF] Login form submitted.
+2024-11-15 19:53:51.087 +02:00 [INF] No errors
+2024-11-15 19:53:51.142 +02:00 [INF] Inventory page opened.
+2024-11-15 19:53:51.233 +02:00 [INF] Test UC3 with values standard_user, secret_sauce has passed.
+2024-11-15 19:53:51.335 +02:00 [INF] ####################################################################################################
+2024-11-15 19:53:51.339 +02:00 [INF] Starting test UC3:
+2024-11-15 19:53:53.054 +02:00 [INF] Login page opened
+2024-11-15 19:53:53.159 +02:00 [INF] Filled username: error_user
+2024-11-15 19:53:53.232 +02:00 [INF] Filled password: secret_sauce
+2024-11-15 19:53:53.304 +02:00 [INF] Login form submitted.
+2024-11-15 19:53:53.314 +02:00 [INF] No errors
+2024-11-15 19:53:53.412 +02:00 [INF] Inventory page opened.
+2024-11-15 19:53:53.473 +02:00 [INF] Test UC3 with values error_user, secret_sauce has passed.
+2024-11-15 19:53:53.572 +02:00 [INF] ####################################################################################################
+2024-11-15 19:53:53.576 +02:00 [INF] Starting test UC1:
+2024-11-15 19:53:55.292 +02:00 [INF] Login page opened
+2024-11-15 19:53:55.376 +02:00 [INF] Filled username: 
+2024-11-15 19:53:55.435 +02:00 [INF] Filled password: 
+2024-11-15 19:53:55.518 +02:00 [INF] Login form submitted.
+2024-11-15 19:53:55.538 +02:00 [ERR] Epic sadface: Username is required
+2024-11-15 19:53:55.538 +02:00 [INF] Test UC1 with values ,  has passed.
+2024-11-15 19:53:55.620 +02:00 [INF] ####################################################################################################
+2024-11-15 19:53:55.623 +02:00 [INF] Starting test UC1:
+2024-11-15 19:53:57.396 +02:00 [INF] Login page opened
+2024-11-15 19:53:57.490 +02:00 [INF] Filled username: 0
+2024-11-15 19:53:57.550 +02:00 [INF] Filled password: 
+2024-11-15 19:53:57.662 +02:00 [INF] Login form submitted.
+2024-11-15 19:53:57.682 +02:00 [ERR] Epic sadface: Username is required
+2024-11-15 19:53:57.683 +02:00 [INF] Test UC1 with values 0,  has passed.
+2024-11-15 19:53:57.784 +02:00 [INF] ####################################################################################################
+2024-11-15 19:53:57.787 +02:00 [INF] Starting test UC1:
+2024-11-15 19:53:59.513 +02:00 [INF] Login page opened
+2024-11-15 19:53:59.607 +02:00 [INF] Filled username: Rudolf
+2024-11-15 19:53:59.674 +02:00 [INF] Filled password: Rittler
+2024-11-15 19:54:00.001 +02:00 [INF] Login form submitted.
+2024-11-15 19:54:00.022 +02:00 [ERR] Epic sadface: Username is required
+2024-11-15 19:54:00.022 +02:00 [INF] Test UC1 with values Rudolf, Rittler has passed.
+2024-11-15 19:54:00.121 +02:00 [INF] ####################################################################################################
+2024-11-15 19:54:00.124 +02:00 [INF] Starting test UC1:
+2024-11-15 19:54:01.834 +02:00 [INF] Login page opened
+2024-11-15 19:54:01.919 +02:00 [INF] Filled username: 
+2024-11-15 19:54:01.992 +02:00 [INF] Filled password: 101244
+2024-11-15 19:54:02.172 +02:00 [INF] Login form submitted.
+2024-11-15 19:54:02.194 +02:00 [ERR] Epic sadface: Username is required
+2024-11-15 19:54:02.194 +02:00 [INF] Test UC1 with values , 101244 has passed.
+2024-11-15 19:54:12.667 +02:00 [INF] LoginTests class has been initialized.

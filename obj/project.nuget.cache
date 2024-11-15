@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "N45TmUe+7qahX7yAdUyLOVnY5faidI/Y/qor8upOvhNdzu3ftriUQg5rzOoY+y2lEBzFOSYM10YjVkRQR6eWng==",
+  "dgSpecHash": "LYCNClHG43fMxjBqQvJUeH3FP2XSXqKzgDVvjp5dhattXU5tU32IHgFXfxjLqf7GULBQ++vRwQeXZSiVgcJJ4A==",
   "success": true,
   "projectFilePath": "C:\\Users\\nazar\\OneDrive\\Рабочий стол\\Програмування\\EPAM automated testing\\SwagLabsTask\\SwagLabsTask.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\nazar\\.nuget\\packages\\dotnetseleniumextras.pageobjects\\3.11.0\\dotnetseleniumextras.pageobjects.3.11.0.nupkg.sha512",
     "C:\\Users\\nazar\\.nuget\\packages\\microsoft.codecoverage\\17.11.1\\microsoft.codecoverage.17.11.1.nupkg.sha512",
     "C:\\Users\\nazar\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0\\microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512",
     "C:\\Users\\nazar\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.0\\microsoft.extensions.logging.abstractions.9.0.0.nupkg.sha512",
