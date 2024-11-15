@@ -1,0 +1,29 @@
+2024-11-15 14:58:17.125 +02:00 [INF] Starting test UC3:
+2024-11-15 14:58:18.574 +02:00 [INF] Login page opened
+2024-11-15 14:58:18.681 +02:00 [INF] Filled username: error_user
+2024-11-15 14:58:18.750 +02:00 [INF] Filled password: secret_sauce
+2024-11-15 14:58:18.845 +02:00 [INF] No errors
+2024-11-15 14:58:18.906 +02:00 [INF] Inventory page opened.
+2024-11-15 14:58:19.007 +02:00 [INF] Test UC3 with values error_user, secret_sauce has passed.
+2024-11-15 14:58:19.101 +02:00 [INF] Starting test UC3:
+2024-11-15 14:58:20.865 +02:00 [INF] Login page opened
+2024-11-15 14:58:20.964 +02:00 [INF] Filled username: visual_user
+2024-11-15 14:58:21.034 +02:00 [INF] Filled password: secret_sauce
+2024-11-15 14:58:21.118 +02:00 [INF] No errors
+2024-11-15 14:58:21.170 +02:00 [INF] Inventory page opened.
+2024-11-15 14:58:21.268 +02:00 [INF] Test UC3 with values visual_user, secret_sauce has passed.
+2024-11-15 14:58:21.372 +02:00 [INF] Starting test UC3:
+2024-11-15 14:58:23.121 +02:00 [INF] Login page opened
+2024-11-15 14:58:23.236 +02:00 [INF] Filled username: performance_glitch_user
+2024-11-15 14:58:23.304 +02:00 [INF] Filled password: secret_sauce
+2024-11-15 14:58:28.397 +02:00 [INF] No errors
+2024-11-15 14:58:28.453 +02:00 [INF] Inventory page opened.
+2024-11-15 14:58:33.546 +02:00 [INF] Test UC3 with values performance_glitch_user, secret_sauce has passed.
+2024-11-15 14:58:33.659 +02:00 [INF] Starting test UC3:
+2024-11-15 14:58:35.403 +02:00 [INF] Login page opened
+2024-11-15 14:58:35.505 +02:00 [INF] Filled username: standard_user
+2024-11-15 14:58:35.593 +02:00 [INF] Filled password: secret_sauce
+2024-11-15 14:58:35.678 +02:00 [INF] No errors
+2024-11-15 14:58:35.733 +02:00 [INF] Inventory page opened.
+2024-11-15 14:58:35.826 +02:00 [INF] Test UC3 with values standard_user, secret_sauce has passed.
+2024-11-15 15:12:07.263 +02:00 [INF] Test class has been initialized.

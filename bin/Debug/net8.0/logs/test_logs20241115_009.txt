@@ -1,0 +1,3 @@
+2024-11-15 04:53:54.404 +02:00 [INF] Starting test UC3:
+2024-11-15 04:53:55.767 +02:00 [INF] Object reference not set to an instance of an object.
+2024-11-15 04:53:55.768 +02:00 [INF] Test class has been initialized.

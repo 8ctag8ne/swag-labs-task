@@ -1,0 +1,21 @@
+2024-11-15 04:23:28.985 +02:00 [INF] Starting test UC1:
+2024-11-15 04:23:30.907 +02:00 [INF] Page opened.
+2024-11-15 04:23:31.009 +02:00 [INF] Filled username: Rudolf
+2024-11-15 04:23:31.080 +02:00 [INF] Filled password: Rittler
+2024-11-15 04:23:31.488 +02:00 [INF] Test UC1 with values Rudolf, Rittler has passed.
+2024-11-15 04:23:31.589 +02:00 [INF] Starting test UC1:
+2024-11-15 04:23:33.322 +02:00 [INF] Page opened.
+2024-11-15 04:23:33.413 +02:00 [INF] Filled username: 1
+2024-11-15 04:23:33.481 +02:00 [INF] Filled password: 
+2024-11-15 04:23:33.615 +02:00 [INF] Test UC1 with values 1,  has passed.
+2024-11-15 04:23:33.716 +02:00 [INF] Starting test UC1:
+2024-11-15 04:23:35.439 +02:00 [INF] Page opened.
+2024-11-15 04:23:35.532 +02:00 [INF] Filled username: 
+2024-11-15 04:23:35.596 +02:00 [INF] Filled password: 
+2024-11-15 04:23:35.699 +02:00 [INF] Test UC1 with values ,  has passed.
+2024-11-15 04:23:35.784 +02:00 [INF] Starting test UC1:
+2024-11-15 04:23:37.566 +02:00 [INF] Page opened.
+2024-11-15 04:23:37.661 +02:00 [INF] Filled username: 
+2024-11-15 04:23:37.728 +02:00 [INF] Filled password: 11
+2024-11-15 04:23:37.861 +02:00 [INF] Test UC1 with values , 11 has passed.
+2024-11-15 04:24:59.804 +02:00 [INF] Тестовий клас ініціалізовано.

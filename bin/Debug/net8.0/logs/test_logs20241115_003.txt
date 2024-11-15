@@ -1,0 +1,48 @@
+2024-11-15 04:29:26.669 +02:00 [INF] Starting test UC2:
+2024-11-15 04:29:28.088 +02:00 [INF] Page opened.
+2024-11-15 04:29:28.191 +02:00 [INF] Filled username: Man...
+2024-11-15 04:29:28.263 +02:00 [INF] Filled password: (Linux)
+2024-11-15 04:29:28.503 +02:00 [INF] Test UC1 with values Man..., (Linux) has passed.
+2024-11-15 04:29:28.609 +02:00 [INF] Starting test UC2:
+2024-11-15 04:29:30.330 +02:00 [INF] Page opened.
+2024-11-15 04:29:30.425 +02:00 [INF] Filled username: 0
+2024-11-15 04:29:30.493 +02:00 [INF] Filled password:     
+2024-11-15 04:29:30.657 +02:00 [INF] Test UC1 with values 0,      has passed.
+2024-11-15 04:29:30.752 +02:00 [INF] Starting test UC2:
+2024-11-15 04:29:32.487 +02:00 [INF] Page opened.
+2024-11-15 04:29:32.595 +02:00 [INF] Filled username: drop table users;
+2024-11-15 04:29:32.660 +02:00 [INF] Filled password: )
+2024-11-15 04:29:32.765 +02:00 [INF] Test UC1 with values drop table users;, ) has passed.
+2024-11-15 04:29:32.857 +02:00 [INF] Starting test UC2:
+2024-11-15 04:29:34.566 +02:00 [INF] Page opened.
+2024-11-15 04:29:34.663 +02:00 [INF] Filled username:      
+2024-11-15 04:29:34.718 +02:00 [INF] Filled password: 
+2024-11-15 04:29:34.807 +02:00 [INF] Test UC1 with values      ,  has passed.
+2024-11-15 04:29:34.901 +02:00 [INF] Starting test UC2:
+2024-11-15 04:29:36.728 +02:00 [INF] Page opened.
+2024-11-15 04:29:36.814 +02:00 [INF] Filled username: 
+2024-11-15 04:29:36.871 +02:00 [INF] Filled password: 
+2024-11-15 04:29:36.955 +02:00 [INF] Assert.Contains() Failure: Sub-string not found
+String:    "Epic sadface: Username is required"
+Not found: "Password is required"
+2024-11-15 04:29:37.057 +02:00 [INF] Starting test UC1:
+2024-11-15 04:29:38.768 +02:00 [INF] Page opened.
+2024-11-15 04:29:38.866 +02:00 [INF] Filled username: Rudolf
+2024-11-15 04:29:38.935 +02:00 [INF] Filled password: Rittler
+2024-11-15 04:29:39.324 +02:00 [INF] Test UC1 with values Rudolf, Rittler has passed.
+2024-11-15 04:29:39.418 +02:00 [INF] Starting test UC1:
+2024-11-15 04:29:41.157 +02:00 [INF] Page opened.
+2024-11-15 04:29:41.246 +02:00 [INF] Filled username: 0
+2024-11-15 04:29:41.306 +02:00 [INF] Filled password: 
+2024-11-15 04:29:41.448 +02:00 [INF] Test UC1 with values 0,  has passed.
+2024-11-15 04:29:41.537 +02:00 [INF] Starting test UC1:
+2024-11-15 04:29:43.272 +02:00 [INF] Page opened.
+2024-11-15 04:29:43.358 +02:00 [INF] Filled username: 
+2024-11-15 04:29:43.421 +02:00 [INF] Filled password: 
+2024-11-15 04:29:43.523 +02:00 [INF] Test UC1 with values ,  has passed.
+2024-11-15 04:29:43.636 +02:00 [INF] Starting test UC1:
+2024-11-15 04:29:45.362 +02:00 [INF] Page opened.
+2024-11-15 04:29:45.450 +02:00 [INF] Filled username: 
+2024-11-15 04:29:45.526 +02:00 [INF] Filled password: Neutron
+2024-11-15 04:29:45.762 +02:00 [INF] Test UC1 with values , Neutron has passed.
+2024-11-15 04:30:05.497 +02:00 [INF] Test class has been initialized.

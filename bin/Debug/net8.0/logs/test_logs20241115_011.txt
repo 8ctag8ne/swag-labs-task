@@ -1,0 +1,67 @@
+2024-11-15 04:57:54.567 +02:00 [INF] Starting test UC3:
+2024-11-15 04:57:55.958 +02:00 [INF] Page opened.
+2024-11-15 04:57:56.068 +02:00 [INF] Filled username: error_user
+2024-11-15 04:57:56.143 +02:00 [INF] Filled password: secret_sauce
+2024-11-15 04:58:01.556 +02:00 [INF] Timed out after 5 seconds
+2024-11-15 04:58:01.692 +02:00 [INF] Starting test UC3:
+2024-11-15 04:58:03.495 +02:00 [INF] Page opened.
+2024-11-15 04:58:03.605 +02:00 [INF] Filled username: visual_user
+2024-11-15 04:58:03.681 +02:00 [INF] Filled password: secret_sauce
+2024-11-15 04:58:09.071 +02:00 [INF] Timed out after 5 seconds
+2024-11-15 04:58:09.185 +02:00 [INF] Starting test UC3:
+2024-11-15 04:58:10.920 +02:00 [INF] Page opened.
+2024-11-15 04:58:11.040 +02:00 [INF] Filled username: performance_glitch_user
+2024-11-15 04:58:11.110 +02:00 [INF] Filled password: secret_sauce
+2024-11-15 04:58:21.324 +02:00 [INF] Timed out after 5 seconds
+2024-11-15 04:58:21.429 +02:00 [INF] Starting test UC3:
+2024-11-15 04:58:23.154 +02:00 [INF] Page opened.
+2024-11-15 04:58:23.271 +02:00 [INF] Filled username: locked_out_user
+2024-11-15 04:58:23.360 +02:00 [INF] Filled password: secret_sauce
+2024-11-15 04:58:23.437 +02:00 [INF] Assert.Empty() Failure: Collection was not empty
+Collection: ["Epic sadface: Sorry, this user has been locked out"···]
+2024-11-15 04:58:23.533 +02:00 [INF] Starting test UC3:
+2024-11-15 04:58:25.266 +02:00 [INF] Page opened.
+2024-11-15 04:58:25.370 +02:00 [INF] Filled username: standard_user
+2024-11-15 04:58:25.443 +02:00 [INF] Filled password: secret_sauce
+2024-11-15 04:58:30.822 +02:00 [INF] Timed out after 5 seconds
+2024-11-15 04:58:30.932 +02:00 [INF] Starting test UC2:
+2024-11-15 04:58:32.643 +02:00 [INF] Page opened.
+2024-11-15 04:58:32.744 +02:00 [INF] Filled username: Man...
+2024-11-15 04:58:32.829 +02:00 [INF] Filled password: (Linux)
+2024-11-15 04:58:33.054 +02:00 [INF] Test UC2 with values Man..., (Linux) has passed.
+2024-11-15 04:58:33.163 +02:00 [INF] Starting test UC2:
+2024-11-15 04:58:34.917 +02:00 [INF] Page opened.
+2024-11-15 04:58:35.003 +02:00 [INF] Filled username: 0
+2024-11-15 04:58:35.067 +02:00 [INF] Filled password:     
+2024-11-15 04:58:35.227 +02:00 [INF] Test UC2 with values 0,      has passed.
+2024-11-15 04:58:35.314 +02:00 [INF] Starting test UC2:
+2024-11-15 04:58:37.084 +02:00 [INF] Page opened.
+2024-11-15 04:58:37.194 +02:00 [INF] Filled username: drop table users;
+2024-11-15 04:58:37.259 +02:00 [INF] Filled password: )
+2024-11-15 04:58:37.368 +02:00 [INF] Test UC2 with values drop table users;, ) has passed.
+2024-11-15 04:58:37.462 +02:00 [INF] Starting test UC2:
+2024-11-15 04:58:39.158 +02:00 [INF] Page opened.
+2024-11-15 04:58:39.258 +02:00 [INF] Filled username:      
+2024-11-15 04:58:39.323 +02:00 [INF] Filled password: 
+2024-11-15 04:58:39.411 +02:00 [INF] Test UC2 with values      ,  has passed.
+2024-11-15 04:58:39.516 +02:00 [INF] Starting test UC1:
+2024-11-15 04:58:41.276 +02:00 [INF] Page opened.
+2024-11-15 04:58:41.372 +02:00 [INF] Filled username: Rudolf
+2024-11-15 04:58:41.448 +02:00 [INF] Filled password: Rittler
+2024-11-15 04:58:41.817 +02:00 [INF] Test UC1 with values Rudolf, Rittler has passed.
+2024-11-15 04:58:41.914 +02:00 [INF] Starting test UC1:
+2024-11-15 04:58:43.629 +02:00 [INF] Page opened.
+2024-11-15 04:58:43.718 +02:00 [INF] Filled username: 0
+2024-11-15 04:58:43.778 +02:00 [INF] Filled password: 
+2024-11-15 04:58:43.918 +02:00 [INF] Test UC1 with values 0,  has passed.
+2024-11-15 04:58:44.013 +02:00 [INF] Starting test UC1:
+2024-11-15 04:58:45.710 +02:00 [INF] Page opened.
+2024-11-15 04:58:45.797 +02:00 [INF] Filled username: 
+2024-11-15 04:58:45.857 +02:00 [INF] Filled password: 
+2024-11-15 04:58:45.958 +02:00 [INF] Test UC1 with values ,  has passed.
+2024-11-15 04:58:46.041 +02:00 [INF] Starting test UC1:
+2024-11-15 04:58:47.742 +02:00 [INF] Page opened.
+2024-11-15 04:58:47.828 +02:00 [INF] Filled username: 
+2024-11-15 04:58:47.894 +02:00 [INF] Filled password: Neutron
+2024-11-15 04:58:48.128 +02:00 [INF] Test UC1 with values , Neutron has passed.
+2024-11-15 05:01:12.381 +02:00 [INF] Test class has been initialized.
