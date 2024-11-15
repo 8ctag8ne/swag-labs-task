@@ -9,7 +9,7 @@ namespace SwagLabsTask.PageObjects
         private By PasswordLocator = By.Id("password");
         private By LoginLocator = By.Id("login-button");
 
-        public LoginPage(IWebDriver driver, TimeSpan timeout) : base(driver, timeout, @"https://www.saucedemo.com/"){}
+        public LoginPage(string browser, TimeSpan timeout) : base(browser, timeout, @"https://www.saucedemo.com/"){}
 
         public LoginPage Open()
         {

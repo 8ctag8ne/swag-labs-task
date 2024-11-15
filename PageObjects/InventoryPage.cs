@@ -6,7 +6,7 @@ namespace SwagLabsTask.PageObjects
     public class InventoryPage : BasePage
     {
         private By LogoLocator = By.ClassName("app_logo");
-        public InventoryPage(IWebDriver driver, TimeSpan timeout) : base(driver, timeout, @"https://www.saucedemo.com/inventory.html"){}
+        public InventoryPage(string browser, TimeSpan timeout) : base(browser, timeout, @"https://www.saucedemo.com/inventory.html"){}
 
         public InventoryPage Open()
         {

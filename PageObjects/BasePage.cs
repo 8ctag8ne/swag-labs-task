@@ -1,5 +1,6 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
+using SwagLabsTask.Utilities;
 
 namespace SwagLabsTask.PageObjects
 {
@@ -10,9 +11,9 @@ namespace SwagLabsTask.PageObjects
         protected readonly WebDriverWait wait;
         protected string Url {get;}
 
-        public BasePage(IWebDriver driver, TimeSpan timeout, string Url)
+        public BasePage(string browser, TimeSpan timeout, string Url)
         {
-            this.driver = driver ?? throw new ArgumentNullException(nameof(driver));
+            this.driver = WebDriverManager.GetInstance(browser).Driver;
             wait = new WebDriverWait(driver, timeout);
             this.Url = Url;
         }
@@ -30,6 +31,7 @@ namespace SwagLabsTask.PageObjects
         public void Close()
         {
             driver.Quit();
+            WebDriverManager.ResetInstance();
         }
     }
 }
