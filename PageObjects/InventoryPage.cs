@@ -1,15 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
 using SwagLabsTask.Utilities;
 
 namespace SwagLabsTask.PageObjects
 {
     public class InventoryPage : BasePage
     {
+        private By LogoLocator = By.ClassName("app_logo");
         public InventoryPage(IWebDriver driver, TimeSpan timeout) : base(driver, timeout, @"https://www.saucedemo.com/inventory.html"){}
 
         public InventoryPage Open()
@@ -19,9 +15,9 @@ namespace SwagLabsTask.PageObjects
             return this;
         }
 
-        public string GetLogo()
+        public string GetLogoText()
         {
-            return wait.Until(driver => driver.FindElement(By.ClassName("app_logo"))).Text;
+            return wait.Until(driver => driver.FindElement(LogoLocator)).Text;
         }
     }
 }

@@ -1,17 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
 using SwagLabsTask.Utilities;
 
 namespace SwagLabsTask.PageObjects
 {
     public class LoginPage : BasePage
     {
+        private By UsernameLocator = By.Id("user-name");
+        private By PasswordLocator = By.Id("password");
+        private By LoginLocator = By.Id("login-button");
+
         public LoginPage(IWebDriver driver, TimeSpan timeout) : base(driver, timeout, @"https://www.saucedemo.com/"){}
-        
+
         public LoginPage Open()
         {
             driver.Url = Url;
@@ -23,12 +22,12 @@ namespace SwagLabsTask.PageObjects
 
         public IWebElement GetUsernameElement()
         {
-            return wait.Until(driver => driver.FindElement(By.Id("user-name")));
+            return wait.Until(driver => driver.FindElement(UsernameLocator));
         }
 
         public IWebElement GetPasswordElement()
         {
-            return wait.Until(driver => driver.FindElement(By.Id("password")));
+            return wait.Until(driver => driver.FindElement(PasswordLocator));
         }
 
         public void FillUsername(string username)
@@ -67,11 +66,11 @@ namespace SwagLabsTask.PageObjects
             }
         }
 
-        public void Submit()
+        public void Login()
         {
-            var button = wait.Until(driver => driver.FindElement(By.Id("login-button")));
+            var button = wait.Until(driver => driver.FindElement(LoginLocator));
             button.Click();
-            SerilogLogger.LogInfo("Form submitted.");
+            SerilogLogger.LogInfo("Login form submitted.");
         }
 
         public string GetUsernameValue()

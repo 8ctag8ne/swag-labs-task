@@ -1,18 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using OpenQA.Selenium.Chrome;
 using SwagLabsTask.PageObjects;
 using Xunit;
-using Xunit.Abstractions;
-using System.Reflection;
 using SwagLabsTask.Utilities;
 
 namespace SwagLabsTestTask
 {   
     public class LoginTests
     {
+        private string browser = "chrome"; //cuz it's the fastest on my computer
         public LoginTests()
         {
             SerilogLogger.LogInfo($"{nameof(LoginTests)} class has been initialized.");
@@ -28,7 +22,7 @@ namespace SwagLabsTestTask
             SerilogLogger.Initialize();
             SerilogLogger.Separate();
             SerilogLogger.LogInfo("Starting test UC1:");
-            var loginPage = new LoginPage(new ChromeDriver(), TimeSpan.FromSeconds(5));
+            var loginPage = new LoginPage(Browser.CreateWebDriver(this.browser), TimeSpan.FromSeconds(5));
             try
             {
                 loginPage.Open();
@@ -36,7 +30,7 @@ namespace SwagLabsTestTask
                 loginPage.FillPassword(password);
                 loginPage.ClearUsername();
                 loginPage.ClearPassword();
-                loginPage.Submit();
+                loginPage.Login();
                 var errors = loginPage.GetErrors();
                 Assert.NotEmpty(errors);
                 Assert.Contains("Username is required", errors[0]);
@@ -64,14 +58,14 @@ namespace SwagLabsTestTask
             SerilogLogger.Initialize();
             SerilogLogger.Separate();
             SerilogLogger.LogInfo("Starting test UC2:");
-            var loginPage = new LoginPage(new ChromeDriver(), TimeSpan.FromSeconds(5));
+            var loginPage = new LoginPage(Browser.CreateWebDriver(this.browser), TimeSpan.FromSeconds(5));
             try
             {
                 loginPage.Open();
                 loginPage.FillUsername(username);
                 loginPage.FillPassword(password);
                 loginPage.ClearPassword();
-                loginPage.Submit();
+                loginPage.Login();
                 var errors = loginPage.GetErrors();
                 Assert.NotEmpty(errors);
                 Assert.Contains("Password is required", errors[0]);
@@ -99,7 +93,7 @@ namespace SwagLabsTestTask
             SerilogLogger.Initialize();
             SerilogLogger.Separate();
             SerilogLogger.LogInfo("Starting test UC3:");
-            var driver = new ChromeDriver();
+            var driver = Browser.CreateWebDriver(this.browser);
             var loginPage = new LoginPage(driver, TimeSpan.FromSeconds(5));
             var inventoryPage = new InventoryPage(driver, TimeSpan.FromSeconds(5));
             try
@@ -107,11 +101,11 @@ namespace SwagLabsTestTask
                 loginPage.Open();
                 loginPage.FillUsername(username);
                 loginPage.FillPassword(password);
-                loginPage.Submit();
+                loginPage.Login();
                 Assert.Empty(loginPage.GetErrors());
                 inventoryPage.Open();
                 Assert.Equal(loginPage.GetCurrentUrl(), inventoryPage.GetPageUrl());
-                Assert.Contains("Swag Labs", inventoryPage.GetLogo());
+                Assert.Contains("Swag Labs", inventoryPage.GetLogoText());
                 SerilogLogger.LogInfo($"Test UC3 with values {username}, {password} has passed.");
             }
             catch (Exception ex)

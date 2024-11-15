@@ -1,8 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using OpenQA.Selenium;
+
 
 namespace SwagLabsTask.Utilities
 {
@@ -11,21 +8,19 @@ namespace SwagLabsTask.Utilities
         private static WebDriverManager instance = null;
         private static readonly object padlock = new object();
         private IWebDriver driver;
-        private IBrowserStrategy browserStrategy;
 
-        private WebDriverManager(IBrowserStrategy strategy)
+        private WebDriverManager(string browser)
         {
-            browserStrategy = strategy;
-            driver = browserStrategy.CreateDriver();
+            driver = Browser.CreateWebDriver(browser);
         }
 
-        public static WebDriverManager GetInstance(IBrowserStrategy strategy)
+        public static WebDriverManager GetInstance(string browser)
         {
             lock (padlock)
             {
                 if (instance == null)
                 {
-                    instance = new WebDriverManager(strategy);
+                    instance = new WebDriverManager(browser);
                 }
                 return instance;
             }
