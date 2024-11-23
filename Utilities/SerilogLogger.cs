@@ -58,4 +58,19 @@ namespace SwagLabsTask.Utilities
             Log.CloseAndFlush();
         }
     }
+    public class SerilogSession : IDisposable
+    {
+        public SerilogSession()
+        {
+            SerilogLogger.Initialize();
+            SerilogLogger.Separate();
+            SerilogLogger.LogInfo("Logging session started.");
+        }
+
+        public void Dispose()
+        {
+            SerilogLogger.LogInfo("Logging session ended.");
+            SerilogLogger.CloseAndFlush();
+        }
+    }
 }

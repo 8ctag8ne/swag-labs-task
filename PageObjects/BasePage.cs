@@ -4,7 +4,7 @@ using SwagLabsTask.Utilities;
 
 namespace SwagLabsTask.PageObjects
 {
-    public class BasePage
+    public class BasePage : IDisposable
     {
         
         protected readonly IWebDriver driver;
@@ -13,7 +13,7 @@ namespace SwagLabsTask.PageObjects
 
         public BasePage(string browser, TimeSpan timeout, string Url)
         {
-            this.driver = WebDriverManager.GetInstance(browser).Driver;
+            driver = WebDriverManager.Instance.GetDriver(browser);
             wait = new WebDriverWait(driver, timeout);
             this.Url = Url;
         }
@@ -25,12 +25,25 @@ namespace SwagLabsTask.PageObjects
 
         public string GetPageUrl()
         {
-            return this.Url;
+            return Url;
         }
 
         public void Close()
         {
-            WebDriverManager.ResetInstance();
+            WebDriverManager.Instance.ResetDriver();
+        }
+
+        public void Dispose()
+        {
+            try
+            {
+                Close();
+            }
+            catch (Exception ex)
+            {
+                SerilogLogger.LogError($"Error during resource cleanup: {ex.Message}");
+                throw;
+            }
         }
     }
 }

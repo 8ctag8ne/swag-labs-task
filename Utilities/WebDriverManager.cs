@@ -1,43 +1,67 @@
+using System.Collections.Concurrent;
 using OpenQA.Selenium;
 
 namespace SwagLabsTask.Utilities
 {
     public sealed class WebDriverManager
     {
-        private static WebDriverManager? instance = null;
-        private static readonly object padlock = new object();
-        private IWebDriver driver;
+        private static readonly Lazy<WebDriverManager> _instance = 
+            new Lazy<WebDriverManager>(() => new WebDriverManager(), LazyThreadSafetyMode.ExecutionAndPublication);
+            
+        private readonly ConcurrentDictionary<int, IWebDriver> _drivers = new ConcurrentDictionary<int, IWebDriver>();
+        
+        private WebDriverManager() { }
 
-        private WebDriverManager(string browser)
+        public static WebDriverManager Instance => _instance.Value;
+
+        public IWebDriver GetDriver(string browser)
         {
-            driver = Browser.CreateWebDriver(browser);
+            var threadId = Thread.CurrentThread.ManagedThreadId;
+            
+            return _drivers.GetOrAdd(threadId, _ => 
+            {
+                var driver = Browser.CreateWebDriver(browser);
+                SerilogLogger.LogInfo($"Created new WebDriver instance for thread {threadId}");
+                return driver;
+            });
         }
 
-        public static WebDriverManager GetInstance(string browser)
+        public void ResetDriver()
         {
-            lock (padlock)
+            var threadId = Thread.CurrentThread.ManagedThreadId;
+            
+            if (_drivers.TryRemove(threadId, out var driver))
             {
-                if (instance == null)
+                try
                 {
-                    instance = new WebDriverManager(browser);
+                    driver.Quit();
+                    driver.Dispose();
+                    SerilogLogger.LogInfo($"Driver cleaned up for thread {threadId}");
                 }
-                return instance;
+                catch (Exception ex)
+                {
+                    SerilogLogger.LogError($"Error during driver cleanup for thread {threadId}: {ex.Message}");
+                }
             }
         }
 
-        public IWebDriver Driver
+        public static void CleanupAllDrivers()
         {
-            get { return driver; }
-        }
-
-        public static void ResetInstance()
-        {
-            lock (padlock)
+            var instance = Instance;
+            foreach (var threadId in instance._drivers.Keys.ToList())
             {
-                if (instance != null)
+                if (instance._drivers.TryRemove(threadId, out var driver))
                 {
-                    instance.Driver.Quit();
-                    instance = null;
+                    try
+                    {
+                        driver.Quit();
+                        driver.Dispose();
+                        SerilogLogger.LogInfo($"Driver cleaned up for thread {threadId}");
+                    }
+                    catch (Exception ex)
+                    {
+                        SerilogLogger.LogError($"Error during driver cleanup for thread {threadId}: {ex.Message}");
+                    }
                 }
             }
         }
