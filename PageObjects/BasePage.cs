@@ -13,7 +13,7 @@ namespace SwagLabsTask.PageObjects
 
         public BasePage(string browser, TimeSpan timeout, string Url)
         {
-            driver = WebDriverManager.Instance.GetDriver(browser);
+            driver = WebDriverManager.GetDriver(browser);
             wait = new WebDriverWait(driver, timeout);
             this.Url = Url;
         }
@@ -30,7 +30,7 @@ namespace SwagLabsTask.PageObjects
 
         public void Close()
         {
-            WebDriverManager.Instance.ResetDriver();
+            WebDriverManager.ResetDriver();
         }
 
         public void Dispose()
